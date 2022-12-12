@@ -21,9 +21,6 @@ def fmn_unauthorized():
 
 @pytest.fixture
 def fmn_authorized():
-    caps = DesiredCapabilities.CHROME
-    caps['goog:loggingPrefs'] = {'performance': 'ALL'}
-
     options = Options()
     options.add_argument('--headless')
 
